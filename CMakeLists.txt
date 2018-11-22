@@ -21,6 +21,8 @@ endif ()
 message (STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
 find_package (OpenCV REQUIRED)
+find_package (libusb REQUIRED)
+find_package (Boost 1.54 COMPONENTS program_options REQUIRED)
 
 add_subdirectory (src)
 add_subdirectory (examples)
